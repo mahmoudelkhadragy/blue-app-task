@@ -1,0 +1,32 @@
+/* Navbar styles */
+.navbar {
+  background-color: #232f3e;
+  color: #fff;
+}
+
+/* products styles */
+.products {
+  padding: 40px 0;
+}
+.product {
+  text-align: center;
+}
+.product_img {
+  width: 70%;
+  margin: auto;
+}
+.product_name {
+  padding-top: 10px;
+  font-size: 20px;
+}
+.product_img img {
+  width: 100%;
+}
+.product_price {
+  color: #555;
+  font-size: 18px;
+}
+.product_desc {
+  height: 50px;
+  overflow: hidden;
+}
