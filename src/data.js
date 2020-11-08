@@ -6,6 +6,7 @@ export const data = {
       category: "furniture",
       image: "/images/products/product1.jpg",
       price: 120,
+      countInStock: 0,
       rating: 4.5,
       numReviews: 9,
       description:
@@ -17,6 +18,7 @@ export const data = {
       category: "accesories",
       image: "/images/products/product8.jpg",
       price: 20,
+      countInStock: 4,
       rating: 5,
       numReviews: 4,
       description:
@@ -29,6 +31,7 @@ export const data = {
       category: "furniture",
       image: "/images/products/product3.jpg",
       price: 50,
+      countInStock: 2,
       rating: 4,
       numReviews: 10,
       description: "Table with wheels, high quality product, many uses",
@@ -39,6 +42,7 @@ export const data = {
       category: "accesories",
       image: "/images/products/product4.jpg",
       price: 10,
+      countInStock: 0,
       rating: 4.5,
       numReviews: 8,
       description: "Mobile Holder to hold phone, high quality product",
@@ -49,6 +53,7 @@ export const data = {
       category: "furniture",
       image: "/images/products/product5.jpg",
       price: 30,
+      countInStock: 5,
       rating: 4,
       numReviews: 11,
       description: "Boiler to boil water, high quality product, fast heat",
@@ -59,6 +64,7 @@ export const data = {
       category: "accesories",
       image: "/images/products/product6.jpg",
       price: 220,
+      countInStock: 3,
       rating: 4.5,
       numReviews: 8,
       description:
@@ -70,6 +76,7 @@ export const data = {
       category: "furniture",
       image: "/images/products/product7.jpg",
       price: 120,
+      countInStock: 0,
       rating: 4,
       numReviews: 8,
       description:
@@ -81,6 +88,7 @@ export const data = {
       category: "accesories",
       image: "/images/products/product2.jpg",
       price: 80,
+      countInStock: 0,
       rating: 4,
       numReviews: 9,
       description: "Travel Case with wheels, high quality product",
