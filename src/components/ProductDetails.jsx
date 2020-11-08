@@ -16,16 +16,20 @@ function ProductDetails(props) {
     <div className="container py-5">
       <div className="row">
         <div className="col-12 col-md-5 col-sm-6">
-          <div className="product_img">
+          <div className="product_details_img">
             <img className="image-fluid" src={product.image} alt="product" />
           </div>
         </div>
         <div className="col-12 col-md-4 col-sm-6">
-          <div className="product_info">
-            <h2 className="product_name">{product.name}</h2>
+          <div className="product_details_info">
+            <h2 className="product_details_name">{product.name}</h2>
             <Rating rating={4} numReviews={product.numReviews} />
-            <p className="product_price">Price: {product.price}$</p>
-            <p className="product_price">Description: {product.description}</p>
+            <p className="product_price">
+              <span>Price:</span> {product.price}$
+            </p>
+            <p className="product_price">
+              <span>Description:</span> {product.description}
+            </p>
           </div>
         </div>
         <div className="col-12 col-md-3 col-sm-6">

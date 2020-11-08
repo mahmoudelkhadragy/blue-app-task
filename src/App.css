@@ -30,8 +30,6 @@
   height: 50px;
   overflow: hidden;
 }
-.rating {
-}
 .rating svg {
   font-size: 21px;
   color: #f9c62f;
@@ -43,9 +41,21 @@
 }
 
 /* ProductDetails  */
+.product_details_img {
+  width: 100%;
+}
+.product_details_img img {
+  width: 100%;
+  margin: auto;
+}
+.product_details_info p span {
+  font-weight: 500;
+  color: #555;
+}
 .product_details_cart {
+  border: 2px solid #c3c0c0;
   padding: 8px;
-  background-color: #ccc;
+  background-color: #efefef;
   border-radius: 8px;
 }
 .card_product_price,
