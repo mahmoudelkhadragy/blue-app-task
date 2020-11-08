@@ -30,3 +30,14 @@
   height: 50px;
   overflow: hidden;
 }
+.rating {
+}
+.rating span {
+  font-size: 18px;
+  color: #f9c62f;
+}
+.rating .rating_views {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #404040;
+}
