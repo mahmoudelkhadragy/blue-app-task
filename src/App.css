@@ -32,12 +32,35 @@
 }
 .rating {
 }
-.rating span {
-  font-size: 18px;
+.rating svg {
+  font-size: 21px;
   color: #f9c62f;
 }
 .rating .rating_views {
   font-size: 14px;
   margin-left: 10px;
   color: #404040;
+}
+
+/* ProductDetails  */
+.product_details_cart {
+  padding: 8px;
+  background-color: #ccc;
+  border-radius: 8px;
+}
+.card_product_price,
+.card_product_status {
+  display: flex;
+  padding: 0 !important;
+  justify-content: space-between;
+}
+.btn_addToCart {
+  display: block !important;
+  margin: 10px auto !important;
+}
+.success {
+  color: #20a020;
+}
+.error {
+  color: #a02020;
 }
