@@ -1,32 +1,21 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
-import { toast } from "react-toastify";
+import React, { useEffect } from "react";
 import Product from "./Product";
-import "react-toastify/dist/ReactToastify.css";
 import LoadingBox from "./LoadingBox";
 import MessageBox from "./MessageBox";
+import { useDispatch, useSelector } from "react-redux";
+import { listProducts } from "../actions/productsActions";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 toast.configure();
 
 function Products() {
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+  const dispatch = useDispatch();
+  const productList = useSelector((state) => state.productList);
+  const { loading, error, products } = productList;
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setLoading(true);
-        const { data } = await axios.get("/api/products");
-        setProducts(data);
-        setLoading(false);
-      } catch (err) {
-        setError(err.message);
-        toast.error("Something went Wrong!");
-        setLoading(false);
-      }
-    };
-    fetchData();
+    dispatch(listProducts());
   }, []);
 
   return (
