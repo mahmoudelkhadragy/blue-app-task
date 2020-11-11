@@ -1,9 +1,13 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import { productsReducer } from "./reducers/productsReducers";
+import {
+  productDetailsReducer,
+  productsReducer,
+} from "./reducers/productsReducers";
 
 const reducer = combineReducers({
   productList: productsReducer,
- });
+  productDetails: productDetailsReducer,
+});
 
 const store = configureStore({ reducer });
 
